@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './Components/Nav'
+import Categories from './Components/Categories';
+import { Route } from "react-router-dom"
+import Search from './Components/Search';
+
+const SeachOptions = {
+  key: process.env.REACT_APP_themealdb_KEY,
+  limit:10,
+  api:"www.themealdb.com/api/json/v1/",
+  endpoint:'/search.php'
+
+}
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <>
+    <div>
+      <header> 
+         <h1>Nom Nom</h1>
+      </header> 
+      <div className="App-NavBar">
+      <Nav />
+      </div>
+      <main className="main">
+
+      <Route path="/Seach" component={Search}  />
+      <Route path="/Categories" component={Categories} />  
+      </main>
     </div>
+
+  </>  
   );
+  
 }
 
 export default App;
