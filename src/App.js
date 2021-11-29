@@ -7,6 +7,7 @@ import Search from './Components/Search';
 import './App.css'
 import background from './picture/IMG_0040.JPG'
 import CategoryDetail from './Components/CategoryDetail'
+import Recipe from './Components/Recipe';
 
 
 
@@ -29,6 +30,7 @@ function App() {
         </div>
         <Route path="/Categories" component={Categories} />
         <Route path="/CategoryDetail/:strCategory" component={CategoryDetail} />
+        <Route path="/recipe/:idMeal" component={Recipe} />
         <main className="main">
           
         </main>
