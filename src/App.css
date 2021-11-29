@@ -1,0 +1,58 @@
+.Background{
+    height: cover;
+
+    /* background-image: url='https://imgur.com/a/hShQW23' ;
+    background-size: cover; */
+
+}
+.App-NavBar{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: black;
+    border-width: 100px; 
+    width: 100px ; 
+    height: 250px;
+    padding: 15px;
+    margin-left: 20px;  
+    text-justify: center ;
+    text-align: center;
+    
+}
+h1{
+    background-color: black;
+    text-align: center;
+    color: white;
+    
+}
+.CategoryContainer{
+    margin: 20px auto;
+    width:auto;
+    height:auto;
+    padding: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:  1em;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.Cateimage {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+.CateBox {
+    display:grid;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 1rem;
+    display: flexbox;
+    grid-template-rows: 1fr 1fr;
+  }
+  .CategoryTitle {
+   
+    text-align: center;
+  }
