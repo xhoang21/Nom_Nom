@@ -17,7 +17,7 @@ function CategoryDetail(props) {
             SetMeals(json.meals)
         })
         .catch(err => console.log('oooo you did somthing wrong', err))
-    }, )
+    }, [] )
     return (
         meals &&
         <div className='Container'>

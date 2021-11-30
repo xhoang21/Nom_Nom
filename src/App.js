@@ -7,7 +7,7 @@ import Search from './Components/Search';
 import CategoryDetail from './Components/CategoryDetail';
 import Recipe from './Components/Recipe';
 import background from './picture/IMG_0040.JPG'
-
+import headerpic from './picture/NomNom-logo/cover.png'
 
 
 
@@ -19,12 +19,12 @@ function App() {
       style={{ backgroundImage:`url(${background})`,
                 background:'cover' }}>
       <div className="headContainer">
-        <header> 
-          <h1>Nom Nom</h1>
+        
+        <header className='header'> 
+          <image src={headerpic} alt="headerpic"/>
         </header>       
         <div className="App-NavBar">
-        <Nav />
-        
+        <Nav />        
         </div>
         <Route path="/Seach" component={Search}  />
         <Route path="/Categories" component={Categories} />

@@ -5,6 +5,9 @@
     background-size: cover; */
 
 }
+.header {
+    height: 100h;
+}
 .App-NavBar{
     background-color: blanchedalmond;
     display: flex;
