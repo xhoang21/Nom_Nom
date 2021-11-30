@@ -20,10 +20,10 @@ function CategoryDetail(props) {
     }, )
     return (
         meals &&
-        <div className='detailsContainer'>
+        <div className='Container'>
             {meals.map((meals) =>
                 <Link to ={`/recipe/${meals.idMeal}`} key={meals.idMeal}>
-                    <div className="mealbox">
+                    <div className="box">
                         <div className='mealimg'>
                             <img src={meals.strMealThumb} 
                                 alt={meals.strmeal}

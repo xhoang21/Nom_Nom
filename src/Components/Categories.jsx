@@ -23,10 +23,10 @@ function Categories(props) {
     },[])
     console.log(categories)
         return (
-            <section className="CategoryContainer">
+            <section className="Container">
                 {categories.map((categories) => (
                     <Link to ={`/CategoryDetail/${categories.strCategory}`} key={categories.strCategory}>
-                        <div className="CateBox">
+                        <div className="box">
                             <div className="CateImage">
                                 <img src={categories.strCategoryThumb} alt={categories.strCategory} />
                             </div>
