@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from'react-router-dom'
+import '../App.css'
 
 const SearchRecipe = ({meals}) => {
     console.log(meals)
     if(!meals.length) {
-        return <h2>grrr.... no meals for you!</h2>
+        return <div className="nomeal">grrr.... no meals for you!</div>
     }
     return (
         <div className="Container">

@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import { Link } from 'react-router-dom'
+import '../App.css'
 
 function CategoryDetail(props) { 
     const [meals, SetMeals] = useState([])
@@ -24,14 +25,13 @@ function CategoryDetail(props) {
             {meals.map((meals) =>
                 <Link to ={`/recipe/${meals.idMeal}`} key={meals.idMeal}>
                     <div className="box">
-                        <div className='mealimg'>
+                        <div className='mealImage'>
                             <img src={meals.strMealThumb} 
-                                alt={meals.strmeal}
+                                alt={meals.strMeal}
                                 />
                         </div>
-                        <div className='mealName'>
-                            <h3>{meals.strmeal}</h3>
-                            
+                        <div className='MealName'>
+                            <h3>{meals.strMeal}</h3>                            
                         </div>
                     </div>
                 </Link>    

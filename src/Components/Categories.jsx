@@ -27,11 +27,11 @@ function Categories(props) {
                 {categories.map((categories) => (
                     <Link to ={`/CategoryDetail/${categories.strCategory}`} key={categories.strCategory}>
                         <div className="box">
-                            <div className="CateImage">
+                            <div className="mealImage">
                                 <img src={categories.strCategoryThumb} alt={categories.strCategory} />
                             </div>
-                            <div className="CategoryTitle">
-                                <h3>{categories.strCategory}</h3>
+                            <div>
+                                <h4>{categories.strCategory}</h4>
                                 <p>{categories.strCategoryDescription}</p>
                             </div>
                         </div>

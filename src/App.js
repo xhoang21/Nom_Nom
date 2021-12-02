@@ -14,27 +14,23 @@ import headerpic from './picture/NomNom-logo/cover.png'
 function App() {
   
   return ( 
-    <>          
-    <div className="Background" 
-      style={{ backgroundImage:`url(${background})`,
-                background:'cover' }}>
-      <div className="headContainer">
-        
-        <header className='header'> 
-          <image src={headerpic} alt="headerpic"/>
-        </header>       
-        <div className="App-NavBar">
-        <Nav />        
+    <>
+      
+        <div className="Container">
+          <header className='header'> 
+          </header>       
         </div>
-        <Route path="/Seach" component={Search}  />
-        <Route path="/Categories" component={Categories} />
-        <Route path="/CategoryDetail/:strCategory" component={CategoryDetail} />
-        <Route path="/recipe/:idMeal" component={Recipe} />
-        <main className="main">
+          <main className="main" >
+                    <div className="App-NavBar">
+                    <Nav />        
+                    </div>
+                    <Route path="/Seach" component={Search}  />
+                    <Route path="/Categories" component={Categories} />
+                    <Route path="/CategoryDetail/:strCategory" component={CategoryDetail} />
+                    <Route path="/recipe/:idMeal" component={Recipe} />
+            
+          </main>
           
-        </main>
-      </div>
-      </div>  
     </>
   
   );

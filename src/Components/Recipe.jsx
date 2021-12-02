@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import '../App.css'
 
 function Recipe(props) {
     const [meals,setMeals] = useState([])
@@ -22,41 +23,45 @@ function Recipe(props) {
         <div>
             {meals.map((meals =>
             <div className ="box">
-                <div className="mealImg">
+                <div className="mealImage">
                     <img src={meals.strMealThumb} alt={meals.strMeal} />
-                </div>    
-                <div>
-                    <h3>{meals.strMeal}</h3>
+                </div>
+                <div className="MealName"> 
+                 <h4>{meals.strMeal}</h4> 
+                <div className="Container">
+                    
                     <div className="ingredeientList">
                     <h4>Ingredients</h4>  
-                    <ol>  
-                       <li><span>{meals.strIngredient1} {meals.strMeasure1}</span></li>
-                       <li><span>{meals.strIngredient2} {meals.strMeasure2}</span></li> 
-                       <li><span>{meals.strIngredient3} {meals.strMeasure3}</span></li> 
-                       <li><span>{meals.strIngredient4} {meals.strMeasure4}</span></li> 
-                       <li><span>{meals.strIngredient5} {meals.strMeasure5}</span></li> 
-                       <li><span>{meals.strIngredient6} {meals.strMeasure6}</span></li> 
-                       <li><span>{meals.strIngredient7} {meals.strMeasure7}</span></li> 
-                       <li><span>{meals.strIngredient8} {meals.strMeasure8}</span></li>
-                       <li><span>{meals.strIngredient9} {meals.strMeasure9}</span></li>
-                       <li><span>{meals.strIngredient10} {meals.strMeasure10}</span></li> 
-                       <li><span>{meals.strIngredient11} {meals.strMeasure11}</span></li>
-                       <li><span>{meals.strIngredient12} {meals.strMeasure12}</span></li> 
-                       <li><span>{meals.strIngredient13} {meals.strMeasure13}</span></li> 
-                       <li><span>{meals.strIngredient14} {meals.strMeasure14}</span></li> 
-                       <li><span>{meals.strIngredient15} {meals.strMeasure15}</span></li> 
-                       <li><span>{meals.strIngredient16} {meals.strMeasure16}</span></li> 
-                       <li><span>{meals.strIngredient17} {meals.strMeasure17}</span></li> 
-                       <li><span>{meals.strIngredient18} {meals.strMeasure18}</span></li> 
-                       <li><span>{meals.strIngredient19} {meals.strMeasure19}</span></li> 
-                       <li><span>{meals.strIngredient20} {meals.strMeasure20}</span></li>
-                    </ol>    
+                        <ol>  
+                        <li>{meals.strMeasure1} {meals.strIngredient1}</li>
+                        <li>{meals.strMeasure2} {meals.strIngredient2}</li>
+                        <li>{meals.strMeasure3} {meals.strIngredient3}</li>
+                        <li>{meals.strMeasure4} {meals.strIngredient4}</li>
+                        <li>{meals.strMeasure5} {meals.strIngredient5}</li>
+                        <li>{meals.strMeasure6} {meals.strIngredient6}</li>
+                        <li>{meals.strMeasure7} {meals.strIngredient7}</li>
+                        <li>{meals.strMeasure8} {meals.strIngredient8}</li>
+                        <li>{meals.strMeasure9} {meals.strIngredient9}</li>
+                        <li>{meals.strMeasure10} {meals.strIngredient10}</li>
+                        <li>{meals.strMeasure11} {meals.strIngredient11}</li>
+                        <li>{meals.strMeasure12} {meals.strIngredient12}</li>
+                        <li>{meals.strMeasure13} {meals.strIngredient13}</li>
+                        <li>{meals.strMeasure14} {meals.strIngredient14}</li>
+                        <li>{meals.strMeasure15} {meals.strIngredient15}</li>
+                        <li>{meals.strMeasure16} {meals.strIngredient16}</li>
+                        <li>{meals.strMeasure17} {meals.strIngredient17}</li>
+                        <li>{meals.strMeasure18} {meals.strIngredient18}</li>
+                        <li>{meals.strMeasure19} {meals.strIngredient19}</li>
+                        <li>{meals.strMeasure20} {meals.strIngredient20}</li>
+                       
+                        </ol>    
                     </div>
                     <div className="instructions">
-                        <h5>Instructions</h5>
+                        <h4>Instructions</h4>
                         <p>{meals.strInstructions}</p>
                     </div>
                 </div>
+                 </div>  
                 </div>
                 ))}
         </div>
