@@ -19,6 +19,7 @@ function Search(props) {
     fetch(Url)
     .then(res => res.json())
     .then (json => {
+      console.log(json)
       setMeals(json.meals);
       setSearch("")
       console.log(json.meals)
@@ -38,7 +39,8 @@ function Search(props) {
             handleChange={handleChange}
             handleSubmit={handleSubmit}
             search={search}/>
-            <SearchRecipe meals={meals}/>            
+          <SearchRecipe 
+            meals={meals}/>            
         </div>
     );
 }

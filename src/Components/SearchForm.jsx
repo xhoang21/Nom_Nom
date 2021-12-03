@@ -4,7 +4,7 @@ import '../App.css'
 function SearchForm(props) {
     const {handleSubmit, handleChange, search} =  props;
     return (
-        <form onSubmit={handleSubmit}className="searchbox">
+        <form onSubmit={handleSubmit} className="searchbox">
         <input 
         placeholder="search" 
         type="text" 

@@ -22,46 +22,63 @@ function Recipe(props) {
     return (
         <div>
             {meals.map((meals =>
-            <div className ="box">
-                <div className="mealImage">
-                    <img src={meals.strMealThumb} alt={meals.strMeal} />
+            <div className ="Recipebox">
+                <div >
+                    <img src={meals.strMealThumb} alt={meals.strMeal} className="RecipeImage" />
                 </div>
                 <div className="MealName"> 
                  <h4>{meals.strMeal}</h4> 
-                <div className="Container">
+                <div className="RecipeContainer">
                     
                     <div className="ingredeientList">
                     <h4>Ingredients</h4>  
-                        <ol>  
-                        <li>{meals.strMeasure1} {meals.strIngredient1}</li>
-                        <li>{meals.strMeasure2} {meals.strIngredient2}</li>
-                        <li>{meals.strMeasure3} {meals.strIngredient3}</li>
-                        <li>{meals.strMeasure4} {meals.strIngredient4}</li>
-                        <li>{meals.strMeasure5} {meals.strIngredient5}</li>
-                        <li>{meals.strMeasure6} {meals.strIngredient6}</li>
-                        <li>{meals.strMeasure7} {meals.strIngredient7}</li>
-                        <li>{meals.strMeasure8} {meals.strIngredient8}</li>
-                        <li>{meals.strMeasure9} {meals.strIngredient9}</li>
-                        <li>{meals.strMeasure10} {meals.strIngredient10}</li>
-                        <li>{meals.strMeasure11} {meals.strIngredient11}</li>
-                        <li>{meals.strMeasure12} {meals.strIngredient12}</li>
-                        <li>{meals.strMeasure13} {meals.strIngredient13}</li>
-                        <li>{meals.strMeasure14} {meals.strIngredient14}</li>
-                        <li>{meals.strMeasure15} {meals.strIngredient15}</li>
-                        <li>{meals.strMeasure16} {meals.strIngredient16}</li>
-                        <li>{meals.strMeasure17} {meals.strIngredient17}</li>
-                        <li>{meals.strMeasure18} {meals.strIngredient18}</li>
-                        <li>{meals.strMeasure19} {meals.strIngredient19}</li>
-                        <li>{meals.strMeasure20} {meals.strIngredient20}</li>
-                       
-                        </ol>    
+                          
+                        {meals.strMeasure1} {meals.strIngredient1}
+                        <br />
+                        {meals.strMeasure2} {meals.strIngredient2}
+                        <br />
+                        {meals.strMeasure3} {meals.strIngredient3}
+                        <br />
+                        {meals.strMeasure4} {meals.strIngredient4}
+                        <br />
+                        {meals.strMeasure5} {meals.strIngredient5}
+                        <br />
+                        {meals.strMeasure6} {meals.strIngredient6}
+                        <br />
+                        {meals.strMeasure7} {meals.strIngredient7}
+                        <br />
+                        {meals.strMeasure8} {meals.strIngredient8}
+                        <br />
+                        {meals.strMeasure9} {meals.strIngredient9}
+                        <br />
+                        {meals.strMeasure10} {meals.strIngredient10}
+                        <br />
+                        {meals.strMeasure11} {meals.strIngredient11}
+                        <br />
+                        {meals.strMeasure12} {meals.strIngredient12}
+                        <br />
+                        {meals.strMeasure13} {meals.strIngredient13}
+                        <br />
+                        {meals.strMeasure14} {meals.strIngredient14}
+                        <br />
+                        {meals.strMeasure15} {meals.strIngredient15}
+                        <br />
+                        {meals.strMeasure16} {meals.strIngredient16}
+                        <br />
+                        {meals.strMeasure17} {meals.strIngredient17}
+                        <br />
+                        {meals.strMeasure18} {meals.strIngredient18}
+                        <br />
+                        {meals.strMeasure19} {meals.strIngredient19}
+                        <br />
+                        {meals.strMeasure20} {meals.strIngredient20}     
                     </div>
                     <div className="instructions">
                         <h4>Instructions</h4>
-                        <p>{meals.strInstructions}</p>
+                        <h3>{meals.strInstructions}</h3>
                     </div>
                 </div>
-                 </div>  
+                </div>  
                 </div>
                 ))}
         </div>

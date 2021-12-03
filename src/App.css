@@ -1,97 +1,233 @@
-.body{
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,200;1,600&display=swap');
+.header{
+    background-color: rgb(238, 230, 238);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    object-position: left;
+    display: inline-flex;
+    
 }
-.header {
-    background-image: Url='https://imgur.com/a/A4Y4v11';
-    display: flex;
-    align-items: center;
-    width: 50%;
+.logo{
+    
+    width: 10%;
+    margin-left: 50px;
     height: auto;
-    max-height: 75px;
 }
-.main{
-    background-image: url='https://imgur.com/a/hShQW23' ;
-    height: cover;
+body{
+    background-image: url('./picture/IMG_0140.JPG');
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    display: flex;
     background-size: cover;
     margin-right: 20px;
-
+    /* background-color: rgb(170, 114, 223); */
 }
-.App-NavBar{
-    background-color: blanchedalmond;
-    display: flex;
-    margin: 20px;
-    flex-wrap: wrap;
-    border-color: black;
-    border-width: 100px; 
-    width: 100px ; 
-    height: 250px;
+.nav{
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 125px;
+    width: max-content ; 
+    height: auto;
     padding: 15px;
-    text-justify: center ;
     text-align: center;
     font-weight: bold;
-    color: blueviolet;
-    
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-}
-h1{
-    background-color: black;
-    text-align: center;
-    color: white;
+    font-size: large;
+    align-content: center;
+    font-family: 'Sarabun', sans-serif;
+    color: rgb(167, 136, 196);;
     
 }
 .MealName{
     align-items: center;
     text-align: center;
-
+    font-family: 'Sarabun', sans-serif;
+    
 }
 .nomeal{
+    border-radius: 6px;
+    background-color: rgb(238, 230, 238);
+    box-sizing: border-box;
+    max-width: 30%;
+    margin-left: 35%;
+    font-weight: bold;
+    font-size: x-large;
     text-align: center;
+    font-family: 'Sarabun', sans-serif;
 }
 .Container{
     margin: 20px auto;
     width:auto;
     height:auto;
-    padding: 20px;
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap:  1em;
     justify-content: center;
     align-content: center;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     line-height: 1.75em;
+    font-family: 'Sarabun', sans-serif;
+}
+.RecipeImage{
+    width: 25%;
+    margin-top: 30px;
+    margin-left: 350px;
 }
 .mealImage {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: auto;
-    width: auto;
-    
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.searchImage{
+    width: 25%;
+    margin-top: 30px;
+    margin-left: 210px;
 } 
+.latestimg{
+    width: 30%;
+    margin-top: 30px;
+    margin-left: px;
+}
 .box {
-    display:grid;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 1rem;
+    display: grid;
+    background-color: rgb(238, 230, 238);
     grid-template-rows: 1fr 1fr;
     margin: 20px;
-  }
+    max-height: 300px;
+    max-width: 550px;
+    opacity: .90;
+}
+.latestbox{
+    display: grid;
+    background-color: rgb(238, 230, 238);
+    font-size: medium;
+    text-align: center;
+    margin: 20px;
+    max-height: 300px;
+    max-width: 300px;
+    opacity: .90;
+}
+.catebox{
+    display: grid;
+    background-color: rgb(238, 230, 238);
+    font-size: medium;
+    margin: 20px;
+    max-height: 900px;
+    max-width: 550px;
+    opacity: .90;
+}
 .searchbox{
-    background-color:#fffbf8;
+    background-color:rgb(238, 230, 238);
     padding:13px;
-    width:335px;
+    width:600px;
     margin:100px auto;
     box-sizing:border-box;
     border-radius:6px;;
+    font-family: 'Sarabun', sans-serif;
+    align-content: center;
+    opacity: .90;
+}
+.Recipebox{
+    background-color:rgb(238, 230, 238);
+    padding:13px;
+    width: 1000px;
+    margin:100px auto;
+    box-sizing:border-box;
+    border-radius:6px;;
+    font-family: 'Sarabun', sans-serif;
+    align-content: center;
+    opacity: .90;
+}
+.ingredeientList{
+    font-weight: bold;
+    font-size: large;
+    justify-content: center;
+    line-height: 2em;
+}
+h1{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family:'Sarabun', sans-serif;
+    
+}
+h2{
+   text-align: center;
+   font-weight: bolder;
+   font-family: 'Sarabun', sans-serif;
+   
+
+}
+h3{
+    font-size: large;
+    font-family: 'Sarabun', sans-serif;;
+    margin-bottom: 90px;
 }
 h4{
     text-align: center;
     font-weight: bolder;
     font-size: x-large;
+    font-family: 'Sarabun', sans-serif;
+    text-decoration: underline;
+}
+h5{
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Sarabun', sans-serif;
 }
 p{
     text-align: center;
+    font-family: 'Sarabun', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(238, 230, 238);
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    color: rgb(167, 136, 196);
 }
+input[type="text" ]{
+    width:400px;
+    height:50px;
+    padding-left:15px;
+    border-radius:6px;
+    border:none;
+    font-weight:bold;
+    font-size: x-large;
+    font-family: 'Sarabun', sans-serif;
+}
+button[type="sumbit"]{
+    height: 50px;
+}
+.latest{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    opacity: .90;
+    max-width: 300px;
+    max-height: 300px;
+}
+.instructions{
+    line-height: 2.5;
+}
+.under{
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .85;
+}
+footer{
+    display: block;
+    text-align: center;
+    height: auto;
+}    
+    .footer{
+        width: 3%;
+        margin-bottom: 50px;
+        
+    }
