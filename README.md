@@ -10,11 +10,12 @@ As a user your going to able to search up a recipe by name or ingrendent. also y
 
 React js
 CSS
+heroku (deployemnt)
 
 #Installation instructions 
 open in the browser
 
-
+https://nom-nom-recipes-1018.herokuapp.com/Home
 
 
 #WireFrames
