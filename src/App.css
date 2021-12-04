@@ -74,7 +74,6 @@ body{
     width:auto;
     height:auto;
     display:grid;
-    max-width: 1500px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap:  1em;
     justify-content: center;
