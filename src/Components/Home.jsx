@@ -1,6 +1,7 @@
 import React, { useEffect, useState }from 'react';
 import { Link } from "react-router-dom"
-
+import Coming from "../picture/Coming_Soon/Coming_Soon.001.jpeg"
+import Adds from"../picture/adds/adds.002.jpeg"
 
 function Home(props) {
     const [meals, SetMeals] = useState([])
@@ -20,9 +21,10 @@ function Home(props) {
         .catch(err => console.log('oooo you did somthing wrong', err))
     }, [] )
     return (
-        <div>
+       <div className="bigContainer">
+        <div className="StaffFavorites">
         <h2>Staff Favorites! </h2>
-        <div className='Container'>
+        <div className='HomeContainer'>
             {meals.map((meals) =>
                 <Link to= {`/recipe/${meals.idMeal}`} key={meals.idMeal}>
                     <div className="latestbox">
@@ -38,8 +40,27 @@ function Home(props) {
                     </div>
                 </Link>   
                 )}
+                </div>
+            </div> 
+        <div className="Mid">       
+            <div className="News">
+                    <h2>What's New</h2>
+                    <img src={Coming} alt="Coming" className="Coming"/>
+
+            </div>
+            <div className="Video">
+                    <h2>Get your Baking Approns on!</h2>
+                    <img src={Coming} alt="Coming" className="Coming"/>
             </div>
         </div>
+        
+        <div className="Adds">
+            <img src={Adds} alt="Adds" className="AddsImg" />
+            <h6>ADVERTISEMENT</h6>
+
+        </div>
+            
+    </div>
     );
 }
 export default Home;           
