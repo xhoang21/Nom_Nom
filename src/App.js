@@ -1,16 +1,16 @@
 import './App.css';
 import React,{useState, useEffect} from 'react';
 import { Route } from "react-router-dom";
-import Categories from './Components/Categories';
-import Search from './Components/Search';
-import CategoryDetail from './Components/CategoryDetail';
-import Recipe from './Components/Recipe';
-import logo from './picture/Nom-Nom-logo/default.png'
 import { Link } from 'react-router-dom';
+import Home from './Components/Home';
+import Categories from './Components/Categories';
+import CategoryDetail from './Components/CategoryDetail';
+import Search from './Components/Search';
+import Recipe from './Components/Recipe';
 import Latest from './Components/Latest';
 import Sumbitform from './Components/Sumbitform';
 import Contact from './Components/Contact';
-import Home from './Components/Home';
+import logo from './picture/Nom-Nom-logo/default.png'
 
 function App() {
   
@@ -18,9 +18,10 @@ function App() {
     <>
         <div className="coverlogo">
           <header className='header'>
+           
             <img src={logo} alt="logo" className="logo"/>
             <div className="nav">
-            <Link to="/Home">Home</Link>
+            <Link to="/home">Home</Link>
             </div>
             <div className="nav">
             <Link to="/Latest">Newest Recipe</Link>
@@ -41,7 +42,7 @@ function App() {
           </header>      
         </div>
           <main className="main" >
-                    <Route path="/Home" component={Home}/>
+                    <Route path="/home" component={Home}/>
                     <Route path="/Latest" component={Latest} />
                     <Route path="/Search" component={Search}  />
                     <Route path="/Categories" component={Categories} />

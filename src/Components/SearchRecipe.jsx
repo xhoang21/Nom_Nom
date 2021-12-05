@@ -8,7 +8,7 @@ const SearchRecipe = ({meals}) => {
     }
     else{
     return (
-        <div className=" Container">
+        <div className="Container">
             {meals.map(meals =>
             <Link to ={`/recipe/${meals.idMeal}`} key={meals.idMeal}>
                 <div className="searchbox">

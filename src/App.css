@@ -51,7 +51,8 @@ body{
     background-color: rgb(238, 230, 238);
     box-sizing: border-box;
     max-width: 30%;
-    margin-left: 35%;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: bold;
     font-size: x-large;
     text-align: center;
@@ -68,6 +69,14 @@ body{
     width: auto;
     height: auto;
     
+}
+.SearchContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
 }
 .Container{
     margin: 20px auto;
@@ -126,6 +135,7 @@ body{
     max-width: 300px;
     opacity: .90;
 }
+
 .catebox{
     display: grid;
     background-color: rgb(238, 230, 238);
@@ -146,13 +156,19 @@ body{
     align-content: center;
     opacity: .90;
 }
+a{
+    max-width:400px ;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 .Recipebox{
     background-color:rgb(238, 230, 238);
-    padding:13px;
     width: 1000px;
     margin:100px auto;
     box-sizing:border-box;
     border-radius:6px;;
+    padding:13px;
     font-family: 'Sarabun', sans-serif;
     align-content: center;
     opacity: .90;

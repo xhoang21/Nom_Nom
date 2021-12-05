@@ -34,14 +34,18 @@ function Search(props) {
     getMeal(search)
   }  
     return (
-        <div>
+      <div>    
+                    
           <SearchForm 
             handleChange={handleChange}
             handleSubmit={handleSubmit}
             search={search}/>
+         
+        <div className="SearchContainer">
           <SearchRecipe 
             meals={meals}/>            
         </div>
+      </div>
     );
 }
 

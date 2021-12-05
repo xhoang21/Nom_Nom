@@ -44,11 +44,11 @@ function Home(props) {
             </div> 
         <div className="Mid">       
             <div className="News">
-                    <h2>What's New</h2>
+                    <h2>Food News</h2>
                     <img src={Coming} alt="Coming" className="Coming"/>
 
             </div>
-            <div className="Video">
+            <div className="seaonal">
                     <h2>Get your Baking Approns on!</h2>
                     <img src={Coming} alt="Coming" className="Coming"/>
             </div>
